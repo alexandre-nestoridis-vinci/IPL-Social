@@ -23,6 +23,12 @@ describe('passwordChecker', () => {
         expect(passwordChecker('Test@only')).toBe(false);
     });
 
+    // Test de la présence de la chaîne "IPL"
+    it('should reject passwords containing "IPL" (case insensitive)', () => {
+        expect(passwordChecker('PasswordIPL1!')).toBe(false);
+        expect(passwordChecker('passwordipl1!')).toBe(false);
+        expect(passwordChecker('PasswIPLord1!')).toBe(false);
+    });
   
   
  
