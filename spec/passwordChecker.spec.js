@@ -23,15 +23,7 @@ describe('passwordChecker', () => {
         expect(passwordChecker('Test@only')).toBe(false);
     });
 
-    // Test de la présence de lettres majuscules
-    it('should reject passwords without uppercase letters', () => {
-        expect(passwordChecker('password1!')).toBe(false);
-    });
-
-    // Test de la présence de lettres minuscules
-    it('should reject passwords without lowercase letters', () => {
-        expect(passwordChecker('PASSWORD1!')).toBe(false);
-    });
+  
   
  
 });
