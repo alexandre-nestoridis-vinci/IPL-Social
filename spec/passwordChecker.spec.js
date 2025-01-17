@@ -11,7 +11,11 @@ describe('passwordChecker', () => {
         expect(passwordChecker('abc!1')).toBe(false);
     });
 
-
+      // Test de la présence de caractères spéciales
+      it('should reject passwords without special characters', () => {
+        expect(passwordChecker('password1')).toBe(false);
+        expect(passwordChecker('Password123')).toBe(false);
+    });
   
  
 });
