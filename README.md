@@ -1,7 +1,7 @@
 # IPL-Social
 
 ## Auteur
-- **Nestoridis**
+- **Nestoridis**.
 - **Alexandre**
 - **alexandre.nestoridis@student.vinci.be**
 
