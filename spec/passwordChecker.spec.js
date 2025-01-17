@@ -29,7 +29,14 @@ describe('passwordChecker', () => {
         expect(passwordChecker('passwordipl1!')).toBe(false);
         expect(passwordChecker('PasswIPLord1!')).toBe(false);
     });
-  
+    
+     // Test pour vérifier que le mot de passe est une chaîne de caractères
+     it('should return false if password is not a string', () => {
+        expect(passwordChecker(12345678)).toBe(false);
+        expect(passwordChecker(null)).toBe(false);
+        expect(passwordChecker(undefined)).toBe(false);
+        expect(passwordChecker({})).toBe(false);
+    });
   
  
 });
