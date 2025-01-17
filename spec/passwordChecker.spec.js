@@ -16,6 +16,12 @@ describe('passwordChecker', () => {
         expect(passwordChecker('password1')).toBe(false);
         expect(passwordChecker('Password123')).toBe(false);
     });
+
+    // Test de la présence de chiffres
+    it('should reject passwords without numbers', () => {
+        expect(passwordChecker('Password!')).toBe(false);
+        expect(passwordChecker('Test@only')).toBe(false);
+    });
   
  
 });
