@@ -37,6 +37,11 @@ describe('passwordChecker', () => {
         expect(passwordChecker(undefined)).toBe(false);
         expect(passwordChecker({})).toBe(false);
     });
-  
+    
+     // Test pour vérifier que le mot de passe est accepté s'il respecte toutes les conditions
+     it('should return true if password meets all criteria', () => {
+        expect(passwordChecker('Valid1!')).toBe(true);
+        expect(passwordChecker('AnotherValid1@')).toBe(true);
+    });
  
 });
